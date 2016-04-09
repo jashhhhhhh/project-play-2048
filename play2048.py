@@ -26,11 +26,11 @@ def play2048( times ):
    i = 0
 
    for i in range(times)
+      print("Turn # " + str(i + 1) + " complete.")
       gameElem.send_keys(Keys.UP)
       gameElem.send_keys(Keys.RIGHT)
       gameElem.send_keys(Keys.DOWN)
       gameElem.send_keys(Keys.LEFT)
-      print("Turn # " + str(i + 1) + " complete.")
       i += 1
 
 
