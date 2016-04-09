@@ -23,12 +23,15 @@ def play2048( times ):
    gameElem = browser.find_element_by_tag_name('html')
    finalscore = browser.find_element_by_class_name('score_container')
    
-   for i in range (0, times)
+   i = 0
+
+   for i in range(times)
       gameElem.send_keys(Keys.UP)
       gameElem.send_keys(Keys.RIGHT)
       gameElem.send_keys(Keys.DOWN)
       gameElem.send_keys(Keys.LEFT)
       print("Turn # " + str(i + 1) + " complete.")
+      i += 1
 
 
    print("FINAL SCORE: " + finalscore.text)
