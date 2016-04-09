@@ -31,4 +31,4 @@ def play2048( times ):
       print("Turn # " + str(i + 1) + " complete.")
 
 
-   print("FINAL SCORE:" + finalscore.text)
+   print("FINAL SCORE: " + finalscore.text)
